@@ -77,27 +77,32 @@
 // *
 // **
 // ***
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main(){
-    int n = 5;
-    int i = 1;
+// int main(){
+//     int n = 5;
+//     int i = 1;
 
 
    
-    while(i<=n){
-         int j =1 ;
-         int c = i;
-while (j<=i)
-{
-    cout<<i-j +1 ;
-    j++;
-c++;
-}
+//     while(i<=n){
+//          int j =1 ;
+//          int c = i;
+// while (j<=i)
+// {
+//     cout<<i-j +1 ;
+//     j++;
+// c++;
+// }
 
-cout<<"\n";
-        i++;
-    }
-}
-
+// cout<<"\n";
+//         i++;
+//     }
+// }
+// out put 
+// 1
+// 21
+// 321
+// 4321
+// 54321
