@@ -49,26 +49,45 @@ using namespace std;
 //         cout<<arr[i]<<' ';
 //     }
 // }
+// int main(){
+//     int arr[] = {6,4,8,34,12,3,43,67,1};
+//     int temp = 0;
+//     int ans =0;
+//     for(int i = 1;i<=9;i++){
+//          if(temp < arr[i-1]){
+//             temp = arr[i-1];
+//          }
+//     }
+
+//     for(int i = 0;i<9;i++){
+//         if(temp != arr[i]){
+//                if(ans < arr[i]){
+//             ans = arr[i];
+//          }
+//         }
+//     }
+// cout<<temp<<endl;
+// cout<<ans;
+// }
+
+
+
+// array rotate;
 int main(){
-    int arr[] = {6,4,8,34,12,3,43,67,1};
-    int temp = 0;
-    int ans =0;
-    for(int i = 1;i<=9;i++){
-         if(temp < arr[i-1]){
-            temp = arr[i-1];
-         }
+    int arr[] = {2,3,4,5,6};
+    int temp ;
+     temp = arr[4];
+    for(int i = 3;i>=0;i--){
+      
+       arr[i+1] = arr[i];
+        cout<<arr[i];
+    };
+    cout<<endl;
+    arr[0] = temp;
+    for(int i = 0;i<=4;i++){
+        cout<<arr[i];
     }
 
-    for(int i = 0;i<9;i++){
-        if(temp != arr[i]){
-               if(ans < arr[i]){
-            ans = arr[i];
-         }
-        }
-    }
-cout<<temp<<endl;
-cout<<ans;
+
+
 }
-
-
-
