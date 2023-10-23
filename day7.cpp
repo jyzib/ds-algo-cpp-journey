@@ -33,15 +33,15 @@ using namespace std;
 //         cout<<endl;
 //     }
 // }
-int main(){
-    int n = 5;
-    for(int row = n;row>=1;row--){
-        for(int col = n-1;col>=row;col--){
-   cout<<" ";
-        }
-        for(int col = (row*2) -1;col>=1;col--){
-   cout<<"*";
-        }
-        cout<<endl;
-    }
-}
+// int main(){
+//     int n = 5;
+//     for(int row = n;row>=1;row--){
+//         for(int col = n-1;col>=row;col--){
+//    cout<<" ";
+//         }
+//         for(int col = (row*2) -1;col>=1;col--){
+//    cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
