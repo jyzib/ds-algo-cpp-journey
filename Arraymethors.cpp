@@ -59,35 +59,104 @@ using namespace std;
 
 
 
-int main(){
+// int main(){
 
-int arr[] = {9,7,6,4,3,1};
-
-
+// int arr[] = {9,7,6,4,3,1};
 
 
 
-int start = 0;
-int end = 5;
 
-int key = 7;
+
+// int start = 0;
+// int end = 5;
+
+// int key = 7;
 
  
-while(start<=end){
-    int middle = (start + end) / 2;
-    cout<<middle <<"\n";
-    if(arr[middle] == key){
-        cout<<"got it"<<middle;
-        break;
-    }else if(key > arr[middle]){
-        end = middle -1;
-    }else{
-        start = middle +1;
+// while(start<=end){
+//     int middle = (start + end) / 2;
+//     cout<<middle <<"\n";
+//     if(arr[middle] == key){
+//         cout<<"got it"<<middle;
+//         break;
+//     }else if(key > arr[middle]){
+//         end = middle -1;
+//     }else{
+//         start = middle +1;
+//     }
+
+// }
+
+
+
+
+// }
+
+
+
+
+
+
+
+// Next day
+
+
+// int main(){
+//     int arr[] = {1,3,3,3,4,5};
+//     int end = 5;
+//     int start = 0;
+//     int key = 3;
+//     int first=-1;
+//     int last = -1;
+
+//     while (start<=end){
+//       int mid = (end+start) / 2;
+    
+//       if(arr[mid] == key){
+//         last = mid;
+//      start = mid+1;
+//         // first = mid;
+//         // end = mid -1;
+        
+       
+       
+
+//       } else if(arr[mid] > key){
+//         end = mid -1;
+
+//       }else{
+//         start = mid +1;
+//       }
+      
+
+//       };
+//     cout<<last<<endl;;
+    
+
+// };
+
+
+// sqrt 
+int main(){
+    int x ;
+    cin>>x;
+    int start = 0;
+    int end = x;
+    int ans = x;
+    while(start<=end){
+        int mid =(start+end)/2;
+        if(mid*mid == x){
+            ans = mid;
+            break;
+        }else if(mid*mid > x){
+
+           end = mid -1;
+        }else{
+             ans = mid;
+               
+            start = mid +1;
+
+        }
     }
-
-}
-
-
-
-
+cout<<ans<<endl;
 }
