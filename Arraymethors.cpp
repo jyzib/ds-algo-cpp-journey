@@ -137,26 +137,48 @@ using namespace std;
 
 
 // sqrt 
-int main(){
-    int x ;
-    cin>>x;
-    int start = 0;
-    int end = x;
-    int ans = x;
-    while(start<=end){
-        int mid =(start+end)/2;
-        if(mid*mid == x){
-            ans = mid;
-            break;
-        }else if(mid*mid > x){
+// int main(){
+//     int x ;
+//     cin>>x;
+//     int start = 0;
+//     int end = x;
+//     int ans = x;
+//     while(start<=end){
+//         int mid =(start+end)/2;
+//         if(mid*mid == x){
+//             ans = mid;
+//             break;
+//         }else if(mid*mid > x){
 
-           end = mid -1;
-        }else{
-             ans = mid;
+//            end = mid -1;
+//         }else{
+//              ans = mid;
                
+//             start = mid +1;
+
+//         }
+//     }
+// cout<<ans<<endl;
+// }
+
+
+int main(){
+    int arr[] ={1,3,4,5,6,8,7,4};
+    int start = 0;
+    int end = 7;
+    
+    while(start<=end){
+      int mid = start + (end-start)/2;
+
+        if(arr[mid] > arr[mid-1] && arr[mid] > arr[mid+ 1]){
+            cout<<arr[mid];
+            break;
+        }else if(arr[mid] > arr[mid -1]){
             start = mid +1;
 
+        }else{
+            end = mid -1;
         }
     }
-cout<<ans<<endl;
+
 }
