@@ -229,23 +229,48 @@ using namespace std;
 
 // }
 
+// int main(){
+//     int arr[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0};
+//         int start = 0;
+//     int end = 11;
+//     int mid = 0;
+//     int first = 0;
+//     int last = 0;
+//     while(start<=end){
+//         mid = (start +end)/2;
+//         if(arr[mid] == 0){
+//             first = mid;
+//             end = mid -1;
+//         }else if( arr[mid] > 0){
+//             start = mid +1;
+//         }else{
+//             end = mid -1;
+//         }
+//     }
+//     }
+
+
 int main(){
-    int arr[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0};
-        int start = 0;
-    int end = 11;
-    int mid = 0;
-    int first = 0;
-    int last = 0;
-    while(start<=end){
-        mid = (start +end)/2;
-        if(arr[mid] == 0){
-            first = mid;
-            end = mid -1;
-        }else if( arr[mid] > 0){
-            start = mid +1;
-        }else{
-            end = mid -1;
+    int N = 18486;
+         int start = 0;
+        int end = N;
+        int mid = 0;
+        int result = 0;
+        while(start<=end){
+            mid = (start + end)/2;
+         long long cube = (long long)mid * mid * mid; // Use long long to prevent overflow
+
+            if(cube == N){
+                result = mid;
+                break;
+            }else if(cube > N){
+                end = mid -1;
+            }else{
+                  result = mid;
+                start = mid +1;
+              
+                
+            }
         }
-    }
-    cout<<first<<endl;
-    }
+        cout<<result<<endl;
+}
