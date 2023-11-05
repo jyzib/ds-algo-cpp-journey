@@ -162,23 +162,94 @@ using namespace std;
 // }
 
 
-int main(){
-    int arr[] ={1,3,4,5,6,8,7,4};
-    int start = 0;
-    int end = 7;
+// int main(){
+//     int arr[] ={1,3,4,5,6,8,7,4};
+//     int start = 0;
+//     int end = 7;
     
-    while(start<=end){
-      int mid = start + (end-start)/2;
+//     while(start<=end){
+//       int mid = start + (end-start)/2;
 
-        if(arr[mid] > arr[mid-1] && arr[mid] > arr[mid+ 1]){
-            cout<<arr[mid];
-            break;
-        }else if(arr[mid] > arr[mid -1]){
-            start = mid +1;
+//         if(arr[mid] > arr[mid-1] && arr[mid] > arr[mid+ 1]){
+//             cout<<arr[mid];
+//             break;
+//         }else if(arr[mid] > arr[mid -1]){
+//             start = mid +1;
 
-        }else{
-            end = mid -1;
+//         }else{
+//             end = mid -1;
+//         }
+//     }
+
+// }
+
+// day 29 paractic
+
+// int main(){
+//     int arr[] = {2,4,5,7,1,3};
+    
+//     for(int i = 0;i<5;i++){
+//         for(int j = i+1;j<=5;j++){
+//             if(arr[i] > arr[j]){
+//        swap(arr[i],arr[j]);
+//             }
+
+//         }
+
+//     }
+//     for(int i =0;i<=5;i++){{
+//         cout<<arr[i]<<" ";
+//     }
+
+//     }
+
+// } 
+
+// bubble sort
+int main(){
+    int arr[] = {4,3,4,2,1};
+    for(int i = 4;i>=0;i--){
+        for(int j = 1;j<=i;j++){
+            if(arr[j-1]>arr[j]){
+                swap(arr[j-1],arr[j]);
+
+            }
         }
     }
 
+    for(int i = 0;i<=4;i++){
+        cout<<arr[i];
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
