@@ -26,25 +26,31 @@ using namespace std;
    
 // }
 
-int main(){
-    int arr[] = {3,4,5,1,2};
-    int start = 0;
-    int end = 4;
-    int index;
-    int mid ;
-    while(start<=end){
-        mid = end + (start-end)/2;
+// int main(){
+//     int arr[] = {3,4,5,1,2};
+//     int start = 0;
+//     int end = 4;
+//     int index;
+//     int mid ;
+//     while(start<=end){
+//         mid = end + (start-end)/2;
 
-        if(arr[0] <= arr[mid]){
-            start = mid +1;
+//         if(arr[0] <= arr[mid]){
+//             start = mid +1;
 
-        }else{
-index = mid;
-            end = mid-1;
-        }
+//         }else{
+// index = mid;
+//             end = mid-1;
+//         }
 
-    }
-cout<<index;
+//     }
+// cout<<index;
 
 
-}
+// }
+
+
+
+
+
+// date 07 nov
