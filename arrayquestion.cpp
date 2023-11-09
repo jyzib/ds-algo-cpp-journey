@@ -258,7 +258,7 @@ using namespace std;
 //         int result = 0;
 //         while(start<=end){
 //             mid = (start + end)/2;
-//          long long cube = (long long)mid * mid * mid; // Use long long to prevent overflow
+//          long long cube = (long long)mid * mid * mid; 
 
 //             if(cube == N){
 //                 result = mid;
@@ -274,34 +274,3 @@ using namespace std;
 //         }
 //         cout<<result<<endl;
 // }
-
-
-// date 07-november search in rotated array
-int main(){
-    int arr[] = {5,1,3};
-
-    int start = 0;
-    int end = 2;
-    int mid;
-    int target = 5;
-    while(start<=end){
-        mid = (start+end)/2;
-        if(arr[mid] == target){
-            cout<<mid;
-            break;
-        }else if(arr[0] < arr[mid]){
-            if(target < arr[mid] && target >= arr[0]){
-                end = mid -1;
-            }else{
-                start = mid+1;
-            }
-
-        }else if(arr[mid] < target && arr[end]>target){
-            start = mid +1;
-        }else {
-            end = mid -1;
-        }
-
-    }
-
-}
