@@ -206,21 +206,22 @@ using namespace std;
 // } 
 
 // bubble sort
-int main(){
-    int arr[] = {4,3,4,2,1};
-    for(int i = 4;i>=0;i--){
-        for(int j = 1;j<=i;j++){
-            if(arr[j-1]>arr[j]){
-                swap(arr[j-1],arr[j]);
+// int main(){
+//     int arr[] = {4,3,4,2,1};
+//     for(int i = 4;i>=0;i--){
+//         for(int j = 1;j<=i;j++){
+//             if(arr[j-1]>arr[j]){
+//                 swap(arr[j-1],arr[j]);
 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-    for(int i = 0;i<=4;i++){
-        cout<<arr[i];
-    }
-}
+//     for(int i = 0;i<=4;i++){
+//         cout<<arr[i];
+//     }
+// }
+
 
 
 
