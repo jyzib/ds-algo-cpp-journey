@@ -274,3 +274,24 @@ using namespace std;
 //         }
 //         cout<<result<<endl;
 // }
+
+
+int main(){
+    int a;
+    cin>>a;
+    int first = 0;
+    int second = 1;
+   int temp;
+    for(int i = 0;i<=a;i++){
+      cout<< first;
+      temp = second;
+       second = first;
+      
+      first = first + temp;
+      
+
+      
+    }
+
+    cout<<'d';
+}
