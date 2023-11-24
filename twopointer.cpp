@@ -101,21 +101,44 @@ using namespace std;
 
 
 // }
-int main(){
-     int arr[] = {2,7,11,15};
-  int target = 9;
-  int start = 0;
-  int end = 5;
-  while(start<end){
-    int sum = arr[start] + arr[end];
-    if(sum == target){
-        cout<<start<<end;
-        break;
-    }else if(sum>target){
-        end--;
-    }else{
-        start ++;
-    }
+// int main(){
+//      int arr[] = {2,7,11,15};
+//   int target = 9;
+//   int start = 0;
+//   int end = 5;
+//   while(start<end){
+//     int sum = arr[start] + arr[end];
+//     if(sum == target){
+//         cout<<start<<end;
+//         break;
+//     }else if(sum>target){
+//         end--;
+//     }else{
+//         start ++;
+//     }
 
-  }
+//   }
+// }
+
+// two pointer deff
+
+int main(){
+   int arr[] = {2,13,15,27,38,80};
+   int target = 14;
+   int start = 0;
+   int end = 1;
+   while(start<end){
+    cout<<arr[end] - arr[start]<<endl;
+    if ((arr[end] - arr[start]) == target){
+        cout<<arr[end]<<arr[start];
+        break;
+    }else if((arr[end] - arr[start]) > target){
+        start++;
+    }else{
+        end ++;
+    }
+   }
+
+
+
 }
