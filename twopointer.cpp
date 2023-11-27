@@ -122,23 +122,120 @@ using namespace std;
 
 // two pointer deff
 
+// int main(){
+//    int arr[] = {2,13,15,27,38,80};
+//    int target = 14;
+//    int start = 0;
+//    int end = 1;
+//    while(start<end){
+    
+//     if ((arr[end] - arr[start]) == target){
+//         cout<<arr[end]<<arr[start];
+//         break;
+//     }else if((arr[end] - arr[start]) > target){
+//         start++;
+//     }else{
+//         end ++;
+//     }
+//    }
+
+// int arr[] = {1,2,3,4,5};
+
+// int prefix[] = {};
+// prefix[0] = arr[0];
+// for(int i = 1;i<=4;i++){
+//     prefix[i] = prefix[i-1]+prefix[i];
+// }
+
+
+// }
+
+// int main(){
+//     int arr[] ={3,4,-2,5,8,20,-10,8};
+//     int start = true;
+//     int count = 1;
+  
+//   while(start){
+//       int left = 0;
+//     int right = 0;
+//     for(int i = 0;i<count;i++){
+//        left += arr[i];
+//     };
+//     for(int j = count;j<=7;j++){
+//         right += arr[j];
+//     }
+//     cout<<left<<endl;
+//     cout<<right<<endl;
+//     if(left == right){
+//         cout<<"sub array";
+//         break;
+//     }else if(count == 7){
+//    break;
+//     }else{
+//         count++;
+//     }
+
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main(){
-   int arr[] = {2,13,15,27,38,80};
-   int target = 14;
-   int start = 0;
-   int end = 1;
-   while(start<end){
-    cout<<arr[end] - arr[start]<<endl;
-    if ((arr[end] - arr[start]) == target){
-        cout<<arr[end]<<arr[start];
-        break;
-    }else if((arr[end] - arr[start]) > target){
-        start++;
-    }else{
-        end ++;
+    int arr[] ={3,4,-2,5,8,20,-10,8};
+    int total = 0;
+    for(int i =0;i<=7;i++){
+total += arr[i];
     }
-   }
-
-
+    int prefix = arr[0];
+    for(int i = 1;i<=7;i++){
+        if(prefix == (total - prefix)){
+            cout<<"true sub array";
+            break;
+        }else{
+            prefix += arr[i];
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
