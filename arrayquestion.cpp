@@ -274,3 +274,64 @@ using namespace std;
 //         }
 //         cout<<result<<endl;
 // }
+
+
+
+
+
+
+
+
+
+int main(){
+//    int arr[] = {1,2,5,8,9,10,7,3,1};
+//    int start = 0;
+//    int mid ;
+//    int end = 7;
+//  while(start<=end){
+//    mid = (start+end)/2;
+
+//    if(arr[mid] > arr[mid+1] && arr[mid] > arr[mid-1]){
+//     cout<<arr[mid];
+//     break;
+//    }else if(arr[mid] > arr[mid-1]){
+//     start = mid +1;
+//    }else{
+//     end = mid -1;
+//    }
+
+//  }
+
+
+// int start = 0;
+// int end = s.size()-1;
+
+// while(start<end){
+//   char newChar = s[start];
+// s[start] = s[end];
+// s[end] = newChar;
+// start ++;
+// end--;
+// };
+// cout<<s;
+
+// int sizeStr = 0;
+// while(s[sizeStr]){
+
+// sizeStr++;
+// }
+// cout<<sizeStr;
+string s = "1981.212.333.413";
+
+string ans;
+for(int i = 0 ;i<s.size();i++){
+    if(s[i] == '.'){
+        ans = ans + "[.]";
+    }else{
+        ans = ans + s[i];
+    };
+   
+}
+cout<<ans;
+
+}
