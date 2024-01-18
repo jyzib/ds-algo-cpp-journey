@@ -1,37 +1,23 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
+
+
 int main(){
-    string s = "ababc";
+    string s = "ababac";
+vector<bool>count(256,0);
+int first = 0,second = 0,length = 0;
 
-
-int first = 0;
-int second = 1;
-int index = 0;
-
-while(index < s.size()){
-    int length = 0;
-     int g = 0;
-     int c = 0;
-    for(int i = second;i>0;i--){
-      
-        if(s[first] != s[i]){
-           c++;
-            g = 0;
-
-        }else{
-            first = second;
-            second++;
-            g = 1;
-        }
+while(second<s.size()){
+    while(count[s[second]]){
+        count[s[first]] = 0;
+        first++;
     }
-if(c>length){
-    length = c;
-    cout<<c;
+     count[s[second]] = 1;
+     length = max(length,(second-first)+1);
+     second ++;
 }
-
-index ++;
-}
-
+cout<<length;
 
 }
