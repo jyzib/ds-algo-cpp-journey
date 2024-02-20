@@ -86,20 +86,50 @@ using namespace std;
 // } 
 // power of two
 
-int poweroftwo(int m){
-  if(m == 0){
-    return 1 ;
+// int poweroftwo(int m,int k){
+//   if(k == 1){
+//     return m ;
+//   }
+//  return  m * poweroftwo(m,k-1);
+// }
+
+// int main(){
+//  cout<< poweroftwo(2,5)<<endl;
+// }
+
+
+
+// sum of n natural numder
+
+
+// int sumofnaturalno(int n){
+//   if(n==0){
+//     return 1;
+//   }
+
+//   return n * sumofnaturalno(n-1);
+
+// }
+// int main(){
+//   cout<<sumofnaturalno(3);
+// }
+
+
+// 
+
+
+int sumofnaturalno(int m,int n){
+  int k = m + (n * n);
+  if(n==1){
+    return k;
   }
-  poweroftwo(m-1);
-  return 2*2;
-}
 
+  return sumofnaturalno(k,n-1);
+
+}
 int main(){
- cout<< poweroftwo(5)<<endl;
+  cout<<sumofnaturalno(0,4);
 }
-
-
-
 
 
 
