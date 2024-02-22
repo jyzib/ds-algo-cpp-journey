@@ -118,18 +118,18 @@ using namespace std;
 // 
 
 
-int sumofnaturalno(int m,int n){
-  int k = m + (n * n);
-  if(n==1){
-    return k;
-  }
+// int sumofnaturalno(int m,int n){
+//   int k = m + (n * n);
+//   if(n==1){
+//     return k;
+//   }
 
-  return sumofnaturalno(k,n-1);
+//   return sumofnaturalno(k,n-1);
 
-}
-int main(){
-  cout<<sumofnaturalno(0,4);
-}
+// }
+// int main(){
+//   cout<<sumofnaturalno(0,4);
+// }
 
 
 
